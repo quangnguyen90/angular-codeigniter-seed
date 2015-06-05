@@ -1,4 +1,4 @@
-# multi-angular-apps-seed
+# angular-codeigniter-seed
 A seed based on [multi-angular-apps-seed](https://github.com/phatpham9/angular-codeigniter-seed) with CodeIgniter on the back.
 
 ### Source structure
@@ -71,7 +71,7 @@ You need
 
 ### Clone angular-codeigniter-seed
 ```sh
-$ git clone [https://github.com/phatpham9/angular-codeigniter-seed](https://github.com/phatpham9/angular-codeigniter-seed)
+$ git clone https://github.com/phatpham9/angular-codeigniter-seed
 $ cd angular-codeigniter-seed
 ```
 
