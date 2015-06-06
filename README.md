@@ -59,7 +59,6 @@ package.json                          -> node packages list
 * grunt-contrib-uglify
 * grunt-contrib-watch
 * grunt-sails-linker
-* grunt-sync
 
 ## Installation
 
