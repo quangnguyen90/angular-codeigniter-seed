@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>angular-codeigniter-seed by phatpham9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">angular-codeigniter-seed</h1>
+      <h2 class="project-tagline">A seed based on multi-angular-apps-seed with CodeIgniter on the back</h2>
+      <a href="https://github.com/phatpham9/angular-codeigniter-seed" class="btn">View on GitHub</a>
+      <a href="https://github.com/phatpham9/angular-codeigniter-seed/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/phatpham9/angular-codeigniter-seed/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angular-codeigniter-seed" class="anchor" href="#angular-codeigniter-seed" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-codeigniter-seed</h1>
+
+<p>A seed based on <a href="https://github.com/phatpham9/angular-codeigniter-seed">multi-angular-apps-seed</a> with CodeIgniter on the back.</p>
+
+<h3>
+<a id="source-structure" class="anchor" href="#source-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source structure</h3>
+
+<pre><code>api/                                  -&gt; codeigniter v3.0 source files, application and system directories
+apps/                                 -&gt; all apps source files
+  admin/                              -&gt; admin's app source files
+    controllers/                      -&gt; angular controller scripts
+    directives/                       -&gt; angular directive scripts
+    services/                         -&gt; angular service scripts
+    routes/                           -&gt; angular routes scripts
+    views/                            -&gt; view templates
+    app.js                            -&gt; main application module
+  frontend/                           -&gt; frontend's app source files
+    controllers/                      -&gt; angular controller scripts
+    directives/                       -&gt; angular directive scripts
+    services/                         -&gt; angular service scripts
+    routes/                           -&gt; angular routes scripts
+    views/                            -&gt; view templates
+    app.js                            -&gt; main application module
+  shared/                             -&gt; all shared assets between the apps
+    fonts/                            -&gt; copied font files
+    images/                           -&gt; image files
+    scripts/                          -&gt; build js files
+    styles/                           -&gt; build css files
+grunt/                                -&gt; gruntjs tasks files
+  config/                             -&gt; all tasks configuration
+  pipeline/                           -&gt; configuration of assets linker
+  register/                           -&gt; all tasks register
+views/                                -&gt; all view templates of the apps rendered by server
+  admin/                              -&gt; view templates of admin app
+    layout.php                        -&gt; layout file to be linked assets
+  frontend/                           -&gt; view templates of frontend app
+    layout.php                        -&gt; layout file to be linked assets
+Gruntfile.js                          -&gt; main script to load and register grunt tasks
+bower.json                            -&gt; dependencies list
+package.json                          -&gt; node packages list
+.htaccess
+</code></pre>
+
+<h3>
+<a id="included-libraries" class="anchor" href="#included-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Included libraries</h3>
+
+<ul>
+<li>angular-resource</li>
+<li>angular-ui-router</li>
+<li>angular-cookies</li>
+<li>angular-bootstrap</li>
+<li>ng-progress</li>
+<li>oclazyload</li>
+<li>jquery</li>
+<li>bootstrap</li>
+<li>font-awesome</li>
+<li>nomalize.css</li>
+</ul>
+
+<h3>
+<a id="grunt-tasks" class="anchor" href="#grunt-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grunt tasks</h3>
+
+<ul>
+<li>grunt-contrib-clean</li>
+<li>grunt-contrib-concat</li>
+<li>grunt-contrib-copy</li>
+<li>grunt-contrib-cssmin</li>
+<li>grunt-contrib-uglify</li>
+<li>grunt-contrib-watch</li>
+<li>grunt-sails-linker</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h3>
+
+<p>You need</p>
+
+<ul>
+<li>
+<a href="http://git-scm.com/">Git</a> to clone the repo</li>
+<li>
+<a href="http://nodejs.org/">Node.js</a> and its package manager npm to install and build dependencies</li>
+<li>PHP-Apache stack to host the app</li>
+</ul>
+
+<h3>
+<a id="clone-angular-codeigniter-seed" class="anchor" href="#clone-angular-codeigniter-seed" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clone angular-codeigniter-seed</h3>
+
+<div class="highlight highlight-sh"><pre>$ git clone https://github.com/phatpham9/angular-codeigniter-seed
+$ <span class="pl-c1">cd</span> angular-codeigniter-seed</pre></div>
+
+<h3>
+<a id="install-dependencies" class="anchor" href="#install-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install dependencies</h3>
+
+<p>Node modules then vendors will be install</p>
+
+<div class="highlight highlight-sh"><pre>$ npm install</pre></div>
+
+<h3>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build</h3>
+
+<p>In development mode, run</p>
+
+<div class="highlight highlight-sh"><pre>$ grunt</pre></div>
+
+<p>Or in production mode, run</p>
+
+<div class="highlight highlight-sh"><pre>$ grunt prod</pre></div>
+
+<h3>
+<a id="run-the-application" class="anchor" href="#run-the-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run the application</h3>
+
+<p>Start the Apache server then open your browser and enter <a href="http://localhost/angular-codeigniter-seed/">http://localhost/angular-codeigniter-seed/</a> to go to frontend app by default. To go to admin app, enter <a href="http://localhost/angular-codeigniter-seed/admin/">http://localhost/angular-codeigniter-seed/admin/</a></p>
+
+<h3>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contribute</h3>
+
+<p>If you like it and want to contribute, just folk my repo and pull your requests.</p>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>MIT license</p>
+
+<h3>
+<a id="version" class="anchor" href="#version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version</h3>
+
+<p>0.0.1</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/phatpham9/angular-codeigniter-seed">angular-codeigniter-seed</a> is maintained by <a href="https://github.com/phatpham9">phatpham9</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
