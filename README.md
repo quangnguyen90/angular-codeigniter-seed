@@ -1,5 +1,5 @@
 # angular-codeigniter-seed
-A seed based on [multi-angular-apps-seed](https://github.com/phatpham9/angular-codeigniter-seed) with CodeIgniter on the back.
+A seed based on [multi-angular-apps-seed](http://apps.phatpham.com/angular-codeigniter-seed) with CodeIgniter on the back.
 
 ### Source structure
 ```
